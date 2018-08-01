@@ -80,7 +80,7 @@ trainFastRCNNObjectDetector: ~0.10 seconds/image. (GTX660, CUDA 3.0)
 Note: performance depends significantly on the hardware you are using.
 
 ## Future Improvements
-A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced to increase the performance and a faster (FasterRCNNObjectDetector) algorithm can be used. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows and data augmentation.
+A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced and a faster (FasterRCNNObjectDetector) algorithm can be used to increase the performance. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows and data augmentation.
 
 ## Sources
 [1] Girshick, Ross. "Fast r-cnn." Proceedings of the IEEE International Conference on Computer Vision. 2015.
