@@ -31,6 +31,7 @@ Let’s hope the competition results in better and more affordable products.  Un
 Having a wide variety of pretrained CNNs, I choose the VGG-19 Series network as a base for this project [4]. The network comes with the following layers:
 
 ![Image of vgg19.png](/media/vgg19.PNG)
+Image source: [5]
 
 * 1   'input'     Image Input             224x224x3 images with 'zerocenter' normalization
 * 2   'conv1_1'   Convolution             64 3x3x3 convolutions with stride [1  1] and padding [1  1]
@@ -59,7 +60,7 @@ The algorithm, chosen for the training of the new network was the Fast-RCNN appr
 
 For the training a set of 3000 label images were used. The 300x300 px images were extracted from different higher resolution videos.
 
-![Image of training](/media/training.PNG)
+![Image of training](/media/training.PNG) 
 
 ## Validation
 
@@ -79,8 +80,7 @@ trainFastRCNNObjectDetector: ~0.10 seconds/image. (GTX660, CUDA 3.0)
 Note: performance depends significantly on the hardware you are using.
 
 ## Future Improvements
-A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced to increase the performance and a faster (FasterRCNNObjectDetector) algorithm can be used. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows.
-
+A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced to increase the performance and a faster (FasterRCNNObjectDetector) algorithm can be used. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows and data augmentation.
 
 ## Sources
 [1] Girshick, Ross. "Fast r-cnn." Proceedings of the IEEE International Conference on Computer Vision. 2015.
