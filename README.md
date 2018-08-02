@@ -28,7 +28,7 @@ Let’s hope the competition results in better and more affordable products.  Un
 
 ## The Network
 
-Having a wide variety of pretrained CNNs, I choose the VGG-19 Series network as a base for this project [4]. The network comes with the following layers:
+Having a wide variety of pretrained CNNs in MATLAB, I chose the VGG-19 Series network as a base for this project [4]. The network comes with the following layers:
 
 ![Image of vgg19.png](/media/vgg19.PNG)
 Image source: [5]
