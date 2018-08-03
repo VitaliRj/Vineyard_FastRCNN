@@ -4,15 +4,15 @@
 
 ![Image of Promo](/media/Promo.PNG)
 
-This project presents an object/obstacle detector using a Fast Region-based Convolutional Network method (Fast R-CNN) in an agricultural environment using Matlab. 
+This project presents an object/obstacle detector using a Fast Region-based Convolutional Neural Network method (Fast R-CNN) in an agricultural environment using Matlab. 
 
 Convolutional Neural Networks have significantly improved image classification and detection accuracy in recent years [1]. Especially complex scenes and objects with a high variety of optical features and surfaces can be detected with increasing confidence.  Agriculture is a brilliant example for heterogenous geometries and surfaces that introduce innumerable difficulties for traditional computer vision approaches.
 
 ![Image of plant_diversity.png](/media/plant_Diversity.PNG)
 
 Having a look into modern vineyards, a progressively common method of weed control is to mechanically/physically remove weed beneath the plants. Hence the implement, removing the weed, has to detect the plants and other obstacles to avoid collisions. The state of the art is to “feel” if there is an obstacle in front of the implement as shown here:
-![Image of contactSensor](/media/contactSensor.png)
 
+![Image of contactSensor](/media/contactSensor.png)
 
 This physical interaction can damage the plants bark, thus allowing fungus to grow. Additional benefits of having a contactless system can be:
 
@@ -64,7 +64,7 @@ For the training a set of 3000 label images were used. The 300x300 px images wer
 
 ## Validation
 
-The validation was performed with a new and for the network unknown part of the vineyard showed that the network detected 202 of the 202 obstacles. It also showed 8 false detections of mostly shadows and loose sticks lying on the ground.
+The validation was performed with a new and for the network unknown part of the vineyard. It showed that the network detected 202 of the 202 obstacles with 8 false detections of mostly shadows and loose sticks on the ground.
 
 ## Performance
 
