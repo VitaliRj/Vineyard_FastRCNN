@@ -66,6 +66,12 @@ For the training a set of 3000 label images were used. The 300x300 px images wer
 
 The validation was performed with a new and for the network unknown part of the vineyard. It showed that the network detected 202 of the 202 obstacles with 8 false detections of mostly shadows and loose sticks on the ground.
 
+<img src="/media/demoGif.gif" width="640" height="480">
+
+Note: The validation results will significantly depend on the arrangement of the detection area. The network will only detect obstacles in this part auf the image. You can adjust this area as you wish in the code.
+
+![Image of detectingArea](/media/detectingArea.PNG) 
+
 ## Performance
 
 They are a couple different algorithms available in MATLAB:
