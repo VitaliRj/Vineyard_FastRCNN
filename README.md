@@ -4,15 +4,15 @@
 
 ![Image of Promo](/media/Promo.PNG)
 
-This project presents an object/obstacle detector using a Fast Region-based Convolutional Network method (Fast R-CNN) in an agricultural environment using Matlab. 
+This project presents an object/obstacle detector using a Fast Region-based Convolutional Neural Network method (Fast R-CNN) in an agricultural environment using Matlab. 
 
 Convolutional Neural Networks have significantly improved image classification and detection accuracy in recent years [1]. Especially complex scenes and objects with a high variety of optical features and surfaces can be detected with increasing confidence.  Agriculture is a brilliant example for heterogenous geometries and surfaces that introduce innumerable difficulties for traditional computer vision approaches.
 
 ![Image of plant_diversity.png](/media/plant_Diversity.PNG)
 
 Having a look into modern vineyards, a progressively common method of weed control is to mechanically/physically remove weed beneath the plants. Hence the implement, removing the weed, has to detect the plants and other obstacles to avoid collisions. The state of the art is to “feel” if there is an obstacle in front of the implement as shown here:
-![Image of contactSensor](/media/contactSensor.png)
 
+![Image of contactSensor](/media/contactSensor.png)
 
 This physical interaction can damage the plants bark, thus allowing fungus to grow. Additional benefits of having a contactless system can be:
 
@@ -28,9 +28,10 @@ Let’s hope the competition results in better and more affordable products.  Un
 
 ## The Network
 
-Having a wide variety of pretrained CNNs, I choose the VGG-19 Series network as a base for this project [4]. The network comes with the following layers:
+Having a wide variety of pretrained CNNs in MATLAB, I chose the VGG-19 Series network as a base for this project [4]. The network comes with the following layers:
 
 ![Image of vgg19.png](/media/vgg19.PNG)
+Image source: [5]
 
 * 1   'input'     Image Input             224x224x3 images with 'zerocenter' normalization
 * 2   'conv1_1'   Convolution             64 3x3x3 convolutions with stride [1  1] and padding [1  1]
@@ -59,11 +60,11 @@ The algorithm, chosen for the training of the new network was the Fast-RCNN appr
 
 For the training a set of 3000 label images were used. The 300x300 px images were extracted from different higher resolution videos.
 
-![Image of training](/media/training.PNG)
+![Image of training](/media/training.PNG) 
 
 ## Validation
 
-The validation was performed with a new and for the network unknown part of the vineyard showed that the network detected 202 of the 202 obstacles. It also showed 8 false detections of mostly shadows and loose sticks lying on the ground.
+The validation was performed with a new and for the network unknown part of the vineyard. It showed that the network detected 202 of the 202 obstacles with 8 false detections of mostly shadows and loose sticks on the ground.
 
 ## Performance
 
@@ -79,8 +80,7 @@ trainFastRCNNObjectDetector: ~0.10 seconds/image. (GTX660, CUDA 3.0)
 Note: performance depends significantly on the hardware you are using.
 
 ## Future Improvements
-A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced to increase the performance and a faster (FasterRCNNObjectDetector) algorithm can be used. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows.
-
+A Neural network can never be perfect. Training settings and training datasets can always be improved. VGG-19 is probably an overkill for this application. The layers can be significantly reduced and a faster (FasterRCNNObjectDetector) algorithm can be used to increase the performance. Additionally, the robustness against false detections of shadows needs to be improved. This can be done with additional training sets including more shadows and data augmentation.
 
 ## Sources
 [1] Girshick, Ross. "Fast r-cnn." Proceedings of the IEEE International Conference on Computer Vision. 2015.
