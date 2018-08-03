@@ -58,7 +58,7 @@ The algorithm, chosen for the training of the new network was the Fast-RCNN appr
 
 ## Training Data
 
-For the training a set of 3000 label images were used. The 300x300 px images were extracted from different higher resolution videos.
+For the training a set of ~3000 label images were used. The 300x300 px images were extracted from different higher resolution videos.
 
 ![Image of training](/media/training.PNG) 
 
